@@ -15,3 +15,4 @@ int main(void)
 		putchar(ch);
 	purchar('\n');
 	return (0);
+}
