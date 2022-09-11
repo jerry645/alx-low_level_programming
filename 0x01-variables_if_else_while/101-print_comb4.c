@@ -32,7 +32,7 @@ int main(void)
 				k++;
 			}
 			j++;
-		}i++
+		}i++;
 	}
 	putchar(10);
 	return (0);
