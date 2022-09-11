@@ -16,12 +16,18 @@ int main(void)
 		{
 			for (l = 50; l < 58; l++)
 			{
-				if (l > m && l > n)
+				if (n == m || m == l || n == l )
 				{
+					continue;
+				}
 					putchar(n);
 					putchar(m);
 					putchar(l);
-					if (n != 55 || m != 56 || l != 57)
+					if (n == 55 && m == 56 && l == 57)
+					{
+						break;
+					}
+					else
 					{
 						putchar(',');
 						putchar(' ');
@@ -29,7 +35,6 @@ int main(void)
 				}
 			}
 		}
-	}
-	putchar('\n');
-	return (0);
+		putchar('\n');
+		return (0);
 }
