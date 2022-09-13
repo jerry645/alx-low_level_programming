@@ -1,6 +1,6 @@
-#include "holberton.h"
+#include <main.h>
 /**
- * main - prints Holberton
+ * main - prints putchar
  *
  * Return: Always 0 (success)
  */
