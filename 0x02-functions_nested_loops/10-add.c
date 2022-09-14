@@ -4,7 +4,7 @@
  *
  * @x: number being added
  *
- * @y; number being added
+ * @y: number being added
  *
  * Return: Always 0.
  *
