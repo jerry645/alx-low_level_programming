@@ -5,7 +5,7 @@
  * followed by a new line 
  * Return: Always 0
  */
-int main(coid)
+int main(void)
 {
 	long int i, j, k, next;
 
@@ -20,7 +20,7 @@ int main(coid)
 			printf("%ld, ", j);
 		} else 
 		{
-			printf("%ld\n" j);
+			printf("%ld\n", j);
 		}
 		next = j + k;
 		j = k;
