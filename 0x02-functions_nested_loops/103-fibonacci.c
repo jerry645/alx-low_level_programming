@@ -19,7 +19,7 @@ int main(void)
 		x = y;
 		y = sum;
 	}
-	peintf("%ld\n", tsum);
-	return (0);
+	printf("%ld\n", tsum);
+	return(0);
 }
 
