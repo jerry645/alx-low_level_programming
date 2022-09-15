@@ -11,7 +11,7 @@ int main(void)
 	for (i = 0; i < 49; i++)
 
 	{
-		if ((y % 2 == 0) && ( y <= 4000000))
+		if ((y % 2 == 0) && (y <= 4000000))
 		{
 			tsum = tsum + y;
 		}
@@ -20,6 +20,6 @@ int main(void)
 		y = sum;
 	}
 	printf("%ld\n", tsum);
-	return(0);
+	return (0);
 }
 
