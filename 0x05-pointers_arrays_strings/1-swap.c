@@ -1,4 +1,4 @@
-#include "mainh.h"
+#include "main.h"
 
 /**
  * swap_int: - swaps the value of a and b
