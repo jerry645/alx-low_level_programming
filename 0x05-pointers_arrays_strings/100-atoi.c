@@ -29,3 +29,4 @@ int _atoi(char *s)
 	if (sign < 0)
 		total = (-total);
 	return (total);
+}
