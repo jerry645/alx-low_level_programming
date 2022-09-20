@@ -9,24 +9,33 @@
 
 int _atoi(char *s)
 {
+	int index, ind2;
+	unsigned int res;
 	int sign = 1;
-	unsigned int total = 0;
-	char null_flag = 0;
+	char now;
 
-	while (*s)
+	index = 0;
+	res = 0;
+	while (*(s + index) != '\0')
 	{
-		if (*s == '_')
-			sign *= -1;
-		if (*s >= '0' && *s <= '9')
+		now = *(s + index);
+		if (now == '-')
 		{
-			null_flag = 1;
-			total = total * 10 + *s  - '0';
+			sign *= -1;
 		}
-		else if (null_flag)
+		if (now >= '0' && now <= '9')
+		{
+			ind2 = index;
+			while (*(s + ind2) > 47 && *(s + ind2) < 58)
+			{
+				res = (res * 10) + *(s + ind2) - '0';
+				ind2++;
+			}
 			break;
-		s++;
+		}
+		index++;
 	}
 	if (sign < 0)
-		total = (-total);
-	return (total);
+		res *= sign;
+	return (res);
 }
